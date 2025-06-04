@@ -13,19 +13,18 @@ This project is a backend API built with **TypeScript**, **Express**, **Prisma**
     
 - **Validation**: Zod schema validation for API inputs
 - **MVC Structure**: Organized using the Model-View-Controller pattern
-////////////////////////////////////////////////////////////////////////////
-- Create a .env file
+# Create a .env file
  DATABASE_URL="postgresql://youruser:yourpassword@localhost:5432/yourdbname"
 JWT_SECRET="yourjwt here"
-////////////////////////////////////////////////////////////////////////////
-- Prisma Setup
-  npx prisma generate
+
+# Prisma Setup
+npx prisma generate
 npx prisma migrate dev --name init
-///////////////////////////////////////////////////////////////////////////
--Start the Server
+
+# Start the Server
 npx ts-node-dev src/server.ts    //// npm run dev
-//////////////////////////////////////////////////////////////////////////
-API Endpoints
+
+# API Endpoints
 Check the exported Postman collection or test with your own:
 
 POST /api/auth/register
@@ -45,5 +44,5 @@ DELETE /api/withdraw/:courseId   (student)
 GET /api/instructor/my-courses (Instructor only)
 
 
-///////////////////////////////
-Name: Souhaib AlMomani
+
+ # Name: Souhaib AlMomani
