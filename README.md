@@ -14,13 +14,13 @@ This project is a backend API built with **TypeScript**, **Express**, **Prisma**
 - **Validation**: Zod schema validation for API inputs
 - **MVC Structure**: Organized using the Model-View-Controller pattern
 # Create a .env file
-DATABASE_URL="postgresql://youruser:yourpassword@localhost:5432/yourdbname"
+- DATABASE_URL="postgresql://youruser:yourpassword@localhost:5432/yourdbname"
 
-JWT_SECRET="your jwt here"
+- JWT_SECRET="your jwt here"
 
 # Prisma Setup
-npx prisma generate
-npx prisma migrate dev --name init
+- npx prisma generate
+- npx prisma migrate dev --name init
 
 # Start the Server
 npx ts-node-dev src/server.ts    //// npm run dev
