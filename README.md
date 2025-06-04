@@ -17,13 +17,16 @@ This project is a backend API built with **TypeScript**, **Express**, **Prisma**
 - DATABASE_URL="postgresql://youruser:yourpassword@localhost:5432/yourdbname"
 
 - JWT_SECRET="your jwt here"
+#change folder
+-(services)=>file(authService.ts)=>line 4 (import { Role } from "../../generated/prisma";) to(import { Role } from "@prisma/client";)
 
 # Prisma Setup
 - npx prisma generate
 - npx prisma migrate dev --name init
 
 # Start the Server
-npx ts-node-dev src/server.ts    //// npm run dev
+- npx ts-node-dev src/server.ts   
+- npm run dev
 
 # API Endpoints
 Check the exported Postman collection or test with your own:
